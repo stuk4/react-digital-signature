@@ -1,8 +1,9 @@
-#React Digital Signature
+
+# React Digital Signature
 
 A React signature component using  [signature_pad](https://github.com/szimek/signature_pad "signature_pad") and based on other libraries of the same functionality.
 
-##Installation
+## Installation
 You can install the latest release using npm:
 
 ```bash
@@ -13,7 +14,7 @@ or Yarn:
 ```bash
 yarn add react-digital-signature
 ```
-##Usage TS
+## Usage TS
 ```tsx
 import { useRef } from 'react'
 import './App.css'
@@ -45,7 +46,7 @@ function App() {
 export default App
 
 ```
-##Usage JS
+## Usage JS
 ```tsx
 import { useRef } from 'react'
 import './App.css'
@@ -76,7 +77,7 @@ function App() {
 }
 export default App
 ```
-##Props ``` <DigitalSignature />```
+## Props ``` <DigitalSignature />```
 | Prop                  | Type             | Default Value      | Description                                                                                                                            |
 |-----------------------|------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | velocityFilterWeight  | number           | 0.7               | Controls the weight/impact of velocity on the pen stroke.                                                                             |
@@ -94,7 +95,7 @@ export default App
 
 Note: All props, except for canvasProps and eraseOnResize, are passed through to signature_pad as its options. If you want know more of the props of the component you can check the original [docs](https://github.com/szimek/signature_pad/blob/master/README.md#options "docs")
 
-##API
+## API
 
 
 - `refDigitalPad.toDataURL();` Returns signature image as data URL (see https://mdn.io/todataurl for the list of possible parameters)
@@ -152,7 +153,7 @@ function App() {
   )
 }
 ```
-##Example
+## Example
 If you want execute the example of the project:
 ```bash
 cd example && npm install && npm run start
