@@ -8,6 +8,7 @@ export const DigitalSignature = (props: DigitalSignatureProps) => {
     const refSignaturePad = useRef<SignaturePad>()
     const { signaturePadRef, 
             canvasProps,
+            eraseOnResize=true,
             ...propsSignPad} = props
 
     const getCanvasElement = (): HTMLCanvasElement => {
@@ -41,7 +42,9 @@ export const DigitalSignature = (props: DigitalSignatureProps) => {
         canvas.width = canvas.offsetWidth * ratio;
         canvas.height = canvas.offsetHeight * ratio;
         canvas.getContext("2d")?.scale(ratio, ratio);
-        clearCanvas()
+        
+        if(eraseOnResize) clearCanvas();
+        
     },[refCanvas.current])
 
     useEffect(() => {

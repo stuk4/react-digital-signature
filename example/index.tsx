@@ -1,8 +1,8 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import DigitalSignature from '../.';
-import SignaturePad from 'signature_pad';
+import DigitalSignature, { SignaturePad } from '../.';
+
 
 const App = () => {
     // Example how to use signaturePadRef
